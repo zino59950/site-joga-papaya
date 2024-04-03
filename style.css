@@ -125,8 +125,16 @@ li p{
     bottom: 10px;
 }
 li img {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     position: relative;
     bottom:75px;
     right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .teamJogaPapaya {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
