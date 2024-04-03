@@ -1,0 +1,132 @@
+body {
+    margin: 0 auto; /* 0 pour le haut et le bas, auto pour les côtés (pour centrer) */
+    max-width: 1440px; /* Largeur maximale du corps */
+    background-color: black;
+    border: goldenrod solid;
+}
+.curtain {
+    position: fixed;
+    top: 0;
+    left: 50%; /* Positionnement au milieu */
+    transform: translateX(-50%);
+    width: 0%; /* Début avec les rideaux fermés */
+    height: 100%;
+    background: linear-gradient(to right, #ff2400, #ff8c00); /* Dégradé de couleur rouge à dorée */
+    animation: openCurtain 2s forwards;
+    z-index: 999;
+}
+
+@keyframes openCurtain {
+    0% {
+        width: 100%; /* Rideaux fermés au début */
+    }
+    100% {
+        width: 0%; /* Rideaux ouverts à la fin */
+    }
+}
+
+header img {
+    width: 100px;
+}
+header {
+    padding: 20px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px red;
+}
+header button {
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 20px;
+    background-color: black;
+    color:gold;
+}
+
+.video {
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    margin: auto;
+}
+.team-section {
+    background-color: black;
+    height: auto;
+    margin: 0%;
+}
+.teamJogaPapaya {
+    background-image: url('fondjoga.webp'); /* Image de fond */
+    background-repeat: no-repeat; /* Pour que l'image de fond ne se répète pas */
+    background-size: cover; /* Pour couvrir toute la surface de la div */
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: autopx;
+}
+
+h2#teamTitle {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: goldenrod;
+    height: 100px;
+    align-items: center;
+    margin: 0%;
+}
+.player-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 150px;
+}
+.player-list li:hover {
+    transform: scale(1.1); /* Grossissement de 10% au survol */
+}
+
+.player-card {
+    background-color: red;
+    border: solid black ;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.player-card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.player-card p {
+    margin: 5px 0;
+}
+
+.hidden {
+    display: none;
+}
+li {
+    background-image: url('joueurBack.jpg');
+    background-size: cover;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    border: solid goldenrod;
+}
+li p{
+    color: goldenrod;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    position: relative;
+    bottom: 10px;
+}
+li img {
+    width: 300px;
+    position: relative;
+    bottom:75px;
+    right: 20px;
+}
